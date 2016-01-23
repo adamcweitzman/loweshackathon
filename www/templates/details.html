@@ -1,15 +1,17 @@
 <ion-view view-title="">
   <ion-content class="padding">
 
-<div class="container-fluid" ng-controller='DetailsCtrl' ng-repeat="product in products">
+<div class="container-fluid" ng-controller='DetailsCtrl'>
     <section>
 		<img src="/img/ionic.png">
 		<div id="homeHeader1" class="text">
 			<h1>This Is The Name of the Listing Ontop of the Listings Picture</h1>
 		</div>
-		<ul class="list">
-          <li class="item">{{product.brand}}</li>
-		      <li class="item">{{product.description}}</li>
+		<ul class="list" ng-repeat="product in products">
+          <li class="item">Price: {{product.networkPrice | currency}}</li>
+          <li class="item">Brand: {{product.brand}}</li>
+          <li class="item">Description: {{product.description | limitTo: 75}}...</li>
+		      <li class="item">Rating: {{product.rating | number: 1}}</li>
 		</ul>
 		<div class="list">
 		  <label class="item item-input">
