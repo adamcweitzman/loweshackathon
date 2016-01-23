@@ -7,7 +7,9 @@ angular.module('starter.controllers', [])
 .controller('ListingsCtrl', function($scope) {})
 
 
-.controller('DetailsCtrl', function($scope) {});
+.controller('DetailsCtrl', function($scope) {
+  $scope.products = Products.all();
+});
 
 
 // The following is from the generated project and only use for an example
