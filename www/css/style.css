@@ -1,32 +1,25 @@
 
-img {
-	height:auto;
-	width:auto;
-	height:200px;
-	width:100%;
-	position:relative;
+.category .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	background-color: #000;
+	opacity: 0.3;
 }
 
-
-.text {
-    left: 0;
-    position:absolute;
-    text-align:center;
-    top: 50px;
-    width: 100%
+.category img {
+	height: 200px;
+	width: 100%;
 }
 
-#homeHeader2 {
-	top: 250px;
+.category .category-heading {
+  text-align: center;
+  width: 100%;
+  font-size: 180%;
+  position: absolute;
+  top: 50px;
+  color: #fff;
 }
-
-#homeHeader3 {
-	top:450px;
-}
-
-input {
-	background-color:red;
-}
-
-
 

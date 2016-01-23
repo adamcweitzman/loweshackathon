@@ -1,32 +1,13 @@
 <ion-view view-title="">
   <ion-content class="padding">
 
-<div class="container-fluid" ng-controller='HomeCtrl'>
-    <section>
-    	<div>
-    		<img src="/img/adam.jpg">
-    		<div id="homeHeader1" class="text">
-    			<h1>This Should Be Centered</h1>
-    		</div>
-    	</div>
+  <ion-list ng-controller="HomeCtrl" ng-repeat="category in categories">
+    <section class="category" type="item-text-wrap" href="#/categories/{{category.id}}">
+  		<div class="overlay"></div>
+  		<img ng-src="{{category.imagePath}}">
+  		<h2 class="category-heading">{{category.name}}</h2>
     </section>
-    <section>
-    	<div>
-    		<img src="/img/ben.png">
-    		<div id="homeHeader2" class="text">
-    			<h1>This Should Be Centered</h1>
-    		</div>
-    	</div>
-    </section>
-    <section>
-    	<div>
-			<img src="/img/mike.png">
-			<div id="homeHeader3" class="text">
-    			<h1>This Should Be Centered</h1>
-    		</div>
-    	</div>
-    </section>
-</div>
+  </ion-list>
   
   </ion-content>
 </ion-view>
