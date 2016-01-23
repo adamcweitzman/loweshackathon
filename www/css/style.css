@@ -36,3 +36,14 @@
 	color:blue;
 }
 
+#map {
+	height: 300px;
+  width: 100%;
+}
+/* might be needed if map has issues
+.scroll {
+    height: 100%;
+}
+*/
+
+

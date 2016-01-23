@@ -14,29 +14,43 @@ angular.module('starter.controllers', [])
 
 .controller('HelpCtrl', function($scope) {})
 
-.controller('DetailsCtrl', function($scope, Products) {
+.controller('DetailsCtrl', function($scope, Products, $cordovaGeolocation, $ionicLoading, $ionicPlatform) {
   $scope.products = Products.all();
 
-  var options = {
-    enableHighAccuracy: true,
-    timeout: 5000,
-    maximumAge: 0
-  };
+  // It is important to wrap geolocation code into Ionic deviceready event, 
+  //  execution will timeout without it
+  ionic.Platform.ready(function(){
+    $ionicLoading.show({
+          template: '<ion-spinner icon="bubbles"></ion-spinner><br/>Acquiring location..'
+      });
 
-  function success(pos) {
-    var crd = pos.coords;
+    var posOptions = {
+        enableHighAccuracy: true,
+        timeout: 20000,
+        maximumAge: 0
+    };
 
-    console.log('Your current position is:');
-    console.log('Latitude : ' + crd.latitude);
-    console.log('Longitude: ' + crd.longitude);
-    console.log('More or less ' + crd.accuracy + ' meters.');
-  }
-
-  function error(err) {
-    console.warn('ERROR(' + err.code + '): ' + err.message);
-  }
-
-  navigator.geolocation.getCurrentPosition(success, error, options);
+    $cordovaGeolocation.getCurrentPosition(posOptions).then(function(position) {
+        var lat  = position.coords.latitude;
+        var long = position.coords.longitude;
+         
+        var myLatlng = new google.maps.LatLng(lat, long);
+         
+        var mapOptions = {
+            center: myLatlng,
+            zoom: 16,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+         
+        $scope.map = map;
+        $ionicLoading.hide();
+         
+    }, function(err) {
+        $ionicLoading.hide();
+        console.log(err);
+    });
+  });
 });
 
 
