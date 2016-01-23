@@ -1,14 +1,12 @@
 <ion-view view-title="">
   <ion-content class="padding">
 
-  <ion-list ng-controller="HomeCtrl">
-    <ion-item class="category" ng-repeat="category in categories" type="item-text-wrap" href="#/categories/{{category.id}}">
-    	<section>
-    		<div id="overlay"></div>
-    		<img ng-src="{{category.imagePath}}">
-    		<h2 class="category-heading">{{category.name}}</h2>
-	    </section>
-    </ion-item>
+  <ion-list ng-controller="HomeCtrl" ng-repeat="category in categories">
+    <section class="category" type="item-text-wrap" href="#/categories/{{category.id}}">
+  		<div class="overlay"></div>
+  		<img ng-src="{{category.imagePath}}">
+  		<h2 class="category-heading">{{category.name}}</h2>
+    </section>
   </ion-list>
   
   </ion-content>
