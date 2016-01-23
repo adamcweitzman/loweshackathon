@@ -2,6 +2,7 @@ angular.module('starter.controllers', [])
 
 .controller('HomeCtrl', function($scope, Categories) {
   $scope.categories = Categories.all();
+  $scope.page = 1
 })
 
 .controller('ListingsCtrl', function($scope, $stateParams, Listings) {
