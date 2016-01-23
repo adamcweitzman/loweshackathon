@@ -14,7 +14,7 @@
 	width: 100%;
 }
 
-.category-heading {
+.category-heading, .listing-heading {
   text-align: center;
   width: 100%;
   font-size: 180%;
