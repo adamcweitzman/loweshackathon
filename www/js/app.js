@@ -59,6 +59,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: '/help',
     templateUrl: 'templates/help.html',
     controller: 'HelpCtrl'
+  })
+
+  .state('confirmation', {
+    url: '/confirmation',
+    templateUrl: 'templates/confirmation.html',
+    controller: 'HelpCtrl'
   });
 
   // if none of the above states are matched, use this as the fallback
