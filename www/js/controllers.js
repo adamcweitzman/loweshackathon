@@ -7,7 +7,13 @@ angular.module('starter.controllers', [])
 .controller('ListingsCtrl', function($scope) {})
 
 
-.controller('DetailsCtrl', function($scope) {});
+.controller('DetailsCtrl', function($scope) {})
+
+.controller('QuantityCtrl', function($scope) {})
+
+.controller('HelpCtrl', function($scope) {});
+
+
 
 
 // The following is from the generated project and only use for an example
