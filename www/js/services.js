@@ -4,27 +4,62 @@ angular.module('starter.services', [])
   var listings = [{
     id: 1,
     categoryId: 1,
-    name: 'Listing 1',
+    name: 'Bathroom 1',
     imagePath: 'img/ben.png'
   }, {
     id: 2,
     categoryId: 1,
-    name: 'Listing 2',
+    name: 'Bathroom 2',
     imagePath: 'img/ben.png'
   }, {
     id: 3,
     categoryId: 1,
-    name: 'Listing 3',
+    name: 'Bathroom 3',
     imagePath: 'img/ben.png'
   }, {
     id: 4,
     categoryId: 1,
-    name: 'Listing 4',
+    name: 'Bathroom 4',
     imagePath: 'img/ben.png'
   }, {
     id: 5,
-    categoryId: 1,
-    name: 'Listing 5',
+    categoryId: 2,
+    name: 'Kitchen 1',
+    imagePath: 'img/ben.png'
+  }, {
+    id: 6,
+    categoryId: 2,
+    name: 'Kitchen 2',
+    imagePath: 'img/ben.png'
+  }, {
+    id: 7,
+    categoryId: 2,
+    name: 'Kitchen 3',
+    imagePath: 'img/ben.png'
+  }, {
+    id: 8,
+    categoryId: 2,
+    name: 'Kitchen 4',
+    imagePath: 'img/ben.png'
+  }, {
+    id: 9,
+    categoryId: 2,
+    name: 'Kitchen 5',
+    imagePath: 'img/ben.png'
+  }, {
+    id: 10,
+    categoryId: 3,
+    name: 'Living Room 1',
+    imagePath: 'img/ben.png'
+  }, {
+    id: 11,
+    categoryId: 3,
+    name: 'Living Room 2',
+    imagePath: 'img/ben.png'
+  }, {
+    id: 12,
+    categoryId: 3,
+    name: 'Living Room 3',
     imagePath: 'img/ben.png'
   }];
 
@@ -83,8 +118,8 @@ angular.module('starter.services', [])
 })
 
 .factory('Products', function() {
-  var products = [  
-      {  
+  var products = [
+      {
          "networkPrice":"1321.63",
          "description":"Whitehaven 21.5625-in x 35.6875-in White Single-Basin Cast Iron Apron Front/Farmhouse Commercial/Residential Kitchen Sink",
          "brand":"KOHLER",
@@ -102,7 +137,7 @@ angular.module('starter.services', [])
          "links":[  ],
          "position":1
       },
-      {  
+      {
          "networkPrice":"199.0",
          "description":"Savile Stainless 1-Handle Pull-Down Kitchen Faucet",
          "brand":"Delta",
@@ -120,7 +155,7 @@ angular.module('starter.services', [])
          "links":[  ],
          "position":2
       },
-      {  
+      {
          "networkPrice":"824.25",
          "description":"Whitehaven 21.5625-in x 29.6875-in White Single-Basin Cast Iron Apron Front/Farmhouse Commercial Kitchen Sink",
          "brand":"KOHLER",
@@ -138,7 +173,7 @@ angular.module('starter.services', [])
          "links":[  ],
          "position":3
       },
-      {  
+      {
          "networkPrice":"133.0",
          "description":"Concord 30-in W x 30-in H x 12-in D Finished White Double Door Kitchen Wall Cabinet",
          "brand":"Kitchen Classics",
@@ -155,7 +190,7 @@ angular.module('starter.services', [])
          "links":[  ],
          "position":4
       },
-      {  
+      {
          "networkPrice":"199.0",
          "description":"Fresco Stainless Steel 1-Handle Pull-Down Kitchen Faucet",
          "brand":"Giagni",
@@ -182,55 +217,3 @@ angular.module('starter.services', [])
   };
 
 });
-
-/*
-
-.factory('Chats', function() {
-  // Might use a resource here that returns a JSON array
-
-  // Some fake testing data
-  var chats = [{
-    id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'img/ben.png'
-  }, {
-    id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'img/max.png'
-  }, {
-    id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'img/adam.jpg'
-  }, {
-    id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'img/perry.png'
-  }, {
-    id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'img/mike.png'
-  }];
-
-  return {
-    all: function() {
-      return chats;
-    },
-    remove: function(chat) {
-      chats.splice(chats.indexOf(chat), 1);
-    },
-    get: function(chatId) {
-      for (var i = 0; i < chats.length; i++) {
-        if (chats[i].id === parseInt(chatId, 10)) {
-          return chats[i];
-        }
-      }
-      return null;
-    }
-  };
-});
-*/
