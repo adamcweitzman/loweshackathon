@@ -7,6 +7,7 @@ angular.module('starter.controllers', [])
 .controller('ListingsCtrl', function($scope) {})
 
 
+<<<<<<< HEAD
 .controller('DetailsCtrl', function($scope) {})
 
 .controller('QuantityCtrl', function($scope) {})
@@ -14,6 +15,11 @@ angular.module('starter.controllers', [])
 .controller('HelpCtrl', function($scope) {});
 
 
+=======
+.controller('DetailsCtrl', function($scope, Products) {
+  $scope.products = Products.all();
+});
+>>>>>>> 096a2be56f164a821cc4f9989296b411f19b9e8a
 
 
 // The following is from the generated project and only use for an example
