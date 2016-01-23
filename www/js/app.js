@@ -47,8 +47,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/details',
     templateUrl: 'templates/details.html',
     controller: 'DetailsCtrl'
-  })
+  });
 
+  // if none of the above states are matched, use this as the fallback
+  $urlRouterProvider.otherwise('/home');
+
+  /*
   // setup an abstract state for the tabs directive
   .state('tab', {
     url: '/tab',
@@ -96,8 +100,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   });
-
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/home');
+  */
 
 });

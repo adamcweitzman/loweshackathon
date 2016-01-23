@@ -63,7 +63,9 @@ angular.module('starter.services', [])
       return null;
     }
   };
-})
+});
+
+/*
 
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
@@ -113,3 +115,4 @@ angular.module('starter.services', [])
     }
   };
 });
+*/

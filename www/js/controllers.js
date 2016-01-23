@@ -6,12 +6,12 @@ angular.module('starter.controllers', [])
 .controller('ListingsCtrl', function($scope) {})
 
 
-.controller('DetailsCtrl', function($scope) {})
+.controller('DetailsCtrl', function($scope) {});
 
 
 
 // The following is from the generated project and only use for an example
-
+/*
 .controller('DashCtrl', function($scope) {})
 
 .controller('ChatsCtrl', function($scope, Chats) {
@@ -38,3 +38,4 @@ angular.module('starter.controllers', [])
     enableFriends: true
   };
 });
+*/
