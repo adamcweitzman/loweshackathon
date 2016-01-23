@@ -1,5 +1,17 @@
 angular.module('starter.controllers', [])
 
+.controller('HomeCtrl', function($scope) {})
+
+
+.controller('ListingsCtrl', function($scope) {})
+
+
+.controller('DetailCtrl', function($scope) {})
+
+
+
+// The following is from the generated project and only use for an example
+
 .controller('DashCtrl', function($scope) {})
 
 .controller('ChatsCtrl', function($scope, Chats) {
