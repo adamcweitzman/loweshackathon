@@ -15,7 +15,7 @@ angular.module('starter.controllers', [])
 
 .controller('HelpCtrl', function($scope) {})
 
-.controller('DetailsCtrl', function($scope, Products, $cordovaGeolocation, $ionicLoading, $ionicPlatform, $compile) {
+.controller('DetailsCtrl', function($scope, Products, $cordovaGeolocation, $ionicPopup, $ionicLoading, $ionicPlatform, $compile) {
   $scope.products = Products.all();
 
   // It is important to wrap geolocation code into Ionic deviceready event, 
@@ -34,6 +34,13 @@ angular.module('starter.controllers', [])
     $cordovaGeolocation.getCurrentPosition(posOptions).then(function(position) {
         var lat  = position.coords.latitude;
         var long = position.coords.longitude;
+
+        $ionicPopup.alert({
+          title: 'Position found: ',
+          content: 'lat: ' + lat + ' long: ' + long
+        }).then(function(res) {
+          console.log('Test Alert Box');
+        });
          
         var myLatlng = new google.maps.LatLng(lat, long);
          
