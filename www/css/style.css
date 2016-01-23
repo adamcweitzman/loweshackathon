@@ -1,4 +1,4 @@
-/* Empty. Add your own CSS if you like */
+
 img {
 	height:auto;
 	width:auto;
@@ -23,3 +23,10 @@ img {
 #homeHeader3 {
 	top:450px;
 }
+
+input {
+	background-color:red;
+}
+
+
+
