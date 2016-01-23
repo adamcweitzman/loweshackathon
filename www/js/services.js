@@ -99,7 +99,8 @@ angular.module('starter.services', [])
          "mulQuantity":0,
          "minQuantity":0,
          "disclaimer":"Does not include faucet or drain",
-         "links":[  ]
+         "links":[  ],
+         "position":1
       },
       {  
          "networkPrice":"199.0",
@@ -116,7 +117,8 @@ angular.module('starter.services', [])
          "mulQuantity":-1,
          "minQuantity":-1,
          "disclaimer":"In-use/lifestyle images - faucet only",
-         "links":[  ]
+         "links":[  ],
+         "position":2
       },
       {  
          "networkPrice":"824.25",
@@ -133,7 +135,8 @@ angular.module('starter.services', [])
          "mulQuantity":-1,
          "minQuantity":-1,
          "disclaimer":"Does not include faucet or drain",
-         "links":[  ]
+         "links":[  ],
+         "position":3
       },
       {  
          "networkPrice":"133.0",
@@ -149,7 +152,8 @@ angular.module('starter.services', [])
          "type":"LOCALONLY",
          "mulQuantity":0,
          "minQuantity":0,
-         "links":[  ]
+         "links":[  ],
+         "position":4
       },
       {  
          "networkPrice":"199.0",
@@ -166,7 +170,8 @@ angular.module('starter.services', [])
          "mulQuantity":-1,
          "minQuantity":-1,
          "disclaimer":"In use/lifestyle image - accessories not included",
-         "links":[  ]
+         "links":[  ],
+         "position":5
       }
    ];
 
