@@ -2,7 +2,7 @@ angular.module('starter.controllers', [])
 
 .controller('HomeCtrl', function($scope, Categories) {
   $scope.categories = Categories.all();
-  $scope.page = 1
+  $scope.page = 1;
 })
 
 .controller('ListingsCtrl', function($scope, $stateParams, Listings) {
@@ -15,7 +15,7 @@ angular.module('starter.controllers', [])
 
 .controller('HelpCtrl', function($scope) {})
 
-.controller('DetailsCtrl', function($scope, Products, $cordovaGeolocation, $ionicLoading, $ionicPlatform) {
+.controller('DetailsCtrl', function($scope, Products, $cordovaGeolocation, $ionicLoading, $ionicPlatform, $compile) {
   $scope.products = Products.all();
 
   // It is important to wrap geolocation code into Ionic deviceready event, 
@@ -27,7 +27,7 @@ angular.module('starter.controllers', [])
 
     var posOptions = {
         enableHighAccuracy: false,
-        timeout: 5000,
+        timeout: 10000,
         maximumAge: 0
     };
 
@@ -43,8 +43,25 @@ angular.module('starter.controllers', [])
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-         
+        
+        var contentString = "<div>Current Location</div>";
+        var compiled = $compile(contentString)($scope);
+
+        var infoWindow = new google.maps.InfoWindow({
+          content: compiled[0]
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Current Location'
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+          infoWindow.open(map,marker);
+        });
+
         $scope.map = map;
+
         $ionicLoading.hide();
          
     }, function(err) {
