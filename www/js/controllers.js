@@ -26,8 +26,8 @@ angular.module('starter.controllers', [])
       });
 
     var posOptions = {
-        enableHighAccuracy: true,
-        timeout: 20000,
+        enableHighAccuracy: false,
+        timeout: 5000,
         maximumAge: 0
     };
 
