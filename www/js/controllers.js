@@ -1,13 +1,13 @@
 angular.module('starter.controllers', [])
 
-.controller('HomeCtrl', function($scope) {})
-
+.controller('HomeCtrl', function($scope, Categories) {
+  $scope.categories = Categories.all();
+})
 
 .controller('ListingsCtrl', function($scope) {})
 
 
 .controller('DetailsCtrl', function($scope) {});
-
 
 
 // The following is from the generated project and only use for an example

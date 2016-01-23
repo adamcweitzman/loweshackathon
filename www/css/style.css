@@ -1,25 +1,24 @@
 /* Empty. Add your own CSS if you like */
-img {
-	height:auto;
-	width:auto;
-	height:200px;
+
+.category .overlay {
+	position:absolute;
+	top:0;
+	left:0;
 	width:100%;
-	position:relative;
+	height:100%;
+	background-color:#000;
+	opacity:0.1;
 }
 
-
-.text {
-    left: 0;
-    position:absolute;
-    text-align:center;
-    top: 50px;
-    width: 100%
+.category img {
+	height: 200px;
+	width: 100%;
 }
 
-#homeHeader2 {
-	top: 250px;
-}
-
-#homeHeader3 {
-	top:450px;
+.category .category-heading {
+  text-align:center;
+  width: 100%;
+  font-size: 180%;
+  position: absolute;
+  top: 50px;
 }

@@ -28,12 +28,21 @@ angular.module('starter.services', [])
       return listings;
     },
     get: function(listingId) {
-      for (var i = 0; i < chats.length; i++) {
+      for (var i = 0; i < listings.length; i++) {
         if (listings[i].id === parseInt(listingId, 10)) {
           return listings[i];
         }
       }
       return null;
+    },
+    getByCategoryId: function(categoryId) {
+      var out = [];
+      for (var i = 0; i < listings.length; i++) {
+        if (listings[i].categoryId === parseInt(categoryId, 10)) {
+          out.push(listings[i]);
+        }
+      }
+      return out;
     }
   };
 })
@@ -41,13 +50,16 @@ angular.module('starter.services', [])
 .factory('Categories', function() {
   var categories = [{
     id: 1,
-    name: 'Bathroom'
+    name: 'Bathroom',
+    imagePath: 'img/ben.png'
   }, {
     id: 2,
-    name: 'Kitchen'
+    name: 'Kitchen',
+    imagePath: 'img/ben.png'
   }, {
     id: 3,
-    name: 'Living Room'
+    name: 'Living Room',
+    imagePath: 'img/ben.png'
   }];
 
   return {
