@@ -1,1 +1,25 @@
 /* Empty. Add your own CSS if you like */
+img {
+	height:auto;
+	width:auto;
+	height:200px;
+	width:100%;
+	position:relative;
+}
+
+
+.text {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 50px;
+    width: 100%
+}
+
+#homeHeader2 {
+	top: 250px;
+}
+
+#homeHeader3 {
+	top:450px;
+}
