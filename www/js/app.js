@@ -47,6 +47,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/details',
     templateUrl: 'templates/details.html',
     controller: 'DetailsCtrl'
+  })
+
+  .state('quantity', {
+    url: '/quantity',
+    templateUrl: 'templates/quantity.html',
+    controller: 'QuantityCtrl'
+  })
+
+  .state('help', {
+    url: '/help',
+    templateUrl: 'templates/help.html',
+    controller: 'HelpCtrl'
   });
 
   // if none of the above states are matched, use this as the fallback
