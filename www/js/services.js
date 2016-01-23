@@ -5,62 +5,74 @@ angular.module('starter.services', [])
     id: 1,
     categoryId: 1,
     name: 'Bathroom 1',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/ben.png',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 2,
     categoryId: 1,
     name: 'Bathroom 2',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/ben.png',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 3,
     categoryId: 1,
     name: 'Bathroom 3',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/ben.png',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 4,
     categoryId: 1,
     name: 'Bathroom 4',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/ben.png',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 5,
     categoryId: 2,
     name: 'Kitchen 1',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/ben.png',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 6,
     categoryId: 2,
     name: 'Kitchen 2',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/ben.png',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 7,
     categoryId: 2,
     name: 'Kitchen 3',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/ben.png',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 8,
     categoryId: 2,
     name: 'Kitchen 4',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/ben.png',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 9,
     categoryId: 2,
     name: 'Kitchen 5',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/ben.png',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 10,
     categoryId: 3,
     name: 'Living Room 1',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/ben.png',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 11,
     categoryId: 3,
     name: 'Living Room 2',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/ben.png',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 12,
     categoryId: 3,
     name: 'Living Room 3',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/ben.png',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }];
 
   return {
