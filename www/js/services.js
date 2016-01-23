@@ -4,22 +4,27 @@ angular.module('starter.services', [])
   var listings = [{
     id: 1,
     categoryId: 1,
+    name: 'Listing 1',
     imagePath: 'img/ben.png'
   }, {
     id: 2,
     categoryId: 1,
+    name: 'Listing 2',
     imagePath: 'img/ben.png'
   }, {
     id: 3,
     categoryId: 1,
+    name: 'Listing 3',
     imagePath: 'img/ben.png'
   }, {
     id: 4,
     categoryId: 1,
+    name: 'Listing 4',
     imagePath: 'img/ben.png'
   }, {
     id: 5,
     categoryId: 1,
+    name: 'Listing 5',
     imagePath: 'img/ben.png'
   }];
 

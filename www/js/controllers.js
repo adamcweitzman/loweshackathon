@@ -4,8 +4,11 @@ angular.module('starter.controllers', [])
   $scope.categories = Categories.all();
 })
 
-.controller('ListingsCtrl', function($scope) {})
-
+.controller('ListingsCtrl', function($scope, $stateParams, Listings) {
+  var categoryId = $stateParams.categoryId;
+  $scope.categoryId = categoryId;
+  $scope.listings = Listings.getByCategoryId(categoryId);
+})
 
 .controller('DetailsCtrl', function($scope) {});
 

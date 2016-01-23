@@ -38,7 +38,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('listings', {
-    url: '/listings',
+    url: '/categories/:categoryId',
     templateUrl: 'templates/listings.html',
     controller: 'ListingsCtrl'
   })

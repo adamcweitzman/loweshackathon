@@ -1,5 +1,5 @@
 
-.category .overlay {
+.overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -9,12 +9,12 @@
 	opacity: 0.3;
 }
 
-.category img {
+.category img, .listing img {
 	height: 200px;
 	width: 100%;
 }
 
-.category .category-heading {
+.category-heading {
   text-align: center;
   width: 100%;
   font-size: 180%;
