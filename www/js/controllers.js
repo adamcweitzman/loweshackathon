@@ -6,7 +6,7 @@ angular.module('starter.controllers', [])
 .controller('ListingsCtrl', function($scope) {})
 
 
-.controller('DetailCtrl', function($scope) {})
+.controller('DetailsCtrl', function($scope) {})
 
 
 
