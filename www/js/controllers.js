@@ -61,7 +61,7 @@ angular.module('starter.controllers', [])
             console.log('testing: ', results[i]['latitude']);
             var newLatlng = new google.maps.LatLng(results[i]['latitude'], results[i]['longitude']);
             
-            var contentString = "<h4>Lowe's Store #" + results[i]['storeNumber'] + "</h4><p>" + results[i]['address1'] + ", " + results[i]['city'] + " " + results[i]['state'] + " " + results[i]['zip'] + "</p><p><em>" + results[i]['milesToStore'] + " miles away</em></p>";
+            var contentString = "<h4>Lowe's Store #" + results[i]['storeNumber'] + "</h4><p>" + results[i]['address1'] + "<br>" + results[i]['city'] + " " + results[i]['state'] + " " + results[i]['zip'] + "</p><p><strong>" + results[i]['milesToStore'] + " miles away</strong></p>";
             //var compiled = $compile(contentString)($scope);
 
             var marker = new google.maps.Marker({
