@@ -112,6 +112,16 @@ div .title .title-right .header-item {
 	padding: 0 0 50px;
 }
 
+#form {
+  /*display: flex;
+  justify-content:center;
+  align-items:center;*/
+}
+
+.title {
+  color: #023F9A;
+}
+
 
 
 

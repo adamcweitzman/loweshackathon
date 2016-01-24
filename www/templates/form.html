@@ -8,15 +8,25 @@
 
 <ion-view view-title="">
   <ion-content class="padding">
-  	<div class="container-fluid" ng-controller="FormCtrl">  
+  	<div class="container-fluid" id="form" ng-controller="FormCtrl">  
 
-		<h1>Help us get in touch</h1>
-		<p>This is some copy </p>
 
-		<form>
-      <input id="name" name="name" placeholder="Full name"><br>
-      <input id="email" name="email" placeholder="Email address">
-    </form>
+		<div class="list">
+      <h1 class="title">Your information</h1>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">First Name</span>
+        <input type="text" placeholder="John">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Last Name</span>
+        <input type="text" placeholder="Suhr">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Email</span>
+        <input type="text" placeholder="john@suhr.com">
+      </label>
+    </div>
+
 	</div>
 
   </ion-content>
