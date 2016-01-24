@@ -7,15 +7,18 @@
     <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
     <title></title>
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
 
     <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
@@ -32,13 +35,23 @@
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
-    <ion-nav-bar class="bar-stable" align-title="right">
-    <ion-nav-title>
-      <a href="#/home"><img id='lowesHeader' class="header-item" src="http://www.lowes.com/images/AboutLowes/new_logos/jpg/no_tagline/NSI_Lowes_logo_no_tagline.jpg"></a>
-    </ion-nav-title>
-      <ion-nav-back-button class="back">
-      </ion-nav-back-button>
-    </ion-nav-bar>
+    <ion-nav-view>
+      <ion-nav-bar id="navBar" class="bar-light  no-animation"  animation="no-animation" align-title="right">
+        <ion-nav-title class="no animation" animation="no-animation">
+        <div id="fixedDiv">
+          <a href="#/home"><img id='lowesHeader' class="header-item no-animation" animation="no-animation" src="http://www.lowes.com/images/AboutLowes/new_logos/jpg/no_tagline/NSI_Lowes_logo_no_tagline.jpg">
+        </div>
+<!--         <div id="homeHeaderText">
+          <h3>Lowes Butler</h3>
+        </div> -->
+        </ion-nav-title>
+         <ion-nav-back-button class="back-button">
+        </ion-nav-back-button>
+
+       
+
+     </ion-nav-bar>
+    </ion-nav-view>
 
     <ion-nav-view></ion-nav-view>
     <script src="https://maps-api-ssl.google.com/maps/api/js?libraries=places"></script>

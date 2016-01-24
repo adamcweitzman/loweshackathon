@@ -14,6 +14,8 @@
 	width: 100%;
 }
 
+
+
 .category-heading, .listing-heading {
   text-align: center;
   width: 100%;
@@ -33,6 +35,9 @@
 #lowesHeader {
 	max-width:100%;
 	max-height:100%;
+	height:50px;
+	padding: 0 0 10px
+
 }
 
 #homeHeader {
@@ -98,6 +103,18 @@ h2, .itemname {
 .thanks {
   font-size: 14px;
 }
+
+#fixedDiv {
+	float:right;
+}
+
+div .title .title-right .header-item {
+	padding: 0 0 50px;
+}
+
+
+
+
 
 /* might be needed if map has issues
 .scroll {

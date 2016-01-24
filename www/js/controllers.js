@@ -1,5 +1,9 @@
 angular.module('starter.controllers', [])
 
+.config(function($ionicConfigProvider) {
+  $ionicConfigProvider.navBar.transition('none')
+})
+
 .controller('HomeCtrl', function($scope, Categories) {
   $scope.categories = Categories.all();
   $scope.page = 1;
@@ -9,6 +13,9 @@ angular.module('starter.controllers', [])
   var categoryId = $stateParams.categoryId;
   $scope.categoryId = categoryId;
   $scope.listings = Listings.getByCategoryId(categoryId);
+  $scope.showAlert = function (id) {
+    globalImgPath = Listings.get(id).imagePath
+  }
 })
 
 .controller('QuantityCtrl', function($scope) {})
@@ -17,6 +24,7 @@ angular.module('starter.controllers', [])
 
 .controller('DetailsCtrl', function($scope, Products, Stores, Categories, $stateParams, $ngCordova, $cordovaCamera, $cordovaGeolocation, $ionicPopup, $ionicLoading, $ionicPlatform, $compile) {
   $scope.products = Products.all();
+  $scope.path = globalImgPath
 
   var categoryId = Products.get($stateParams.listingId);
 
