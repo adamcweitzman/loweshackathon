@@ -1,5 +1,6 @@
 angular.module('starter.services', [])
 
+
 .factory('Listings', function() {
   var listings = [{
     id: 1,
@@ -74,6 +75,7 @@ angular.module('starter.services', [])
     imagePath: 'img/lroom_three.jpg',
     description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }];
+
 
   return {
     all: function() {
