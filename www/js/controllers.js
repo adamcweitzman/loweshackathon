@@ -9,6 +9,11 @@ angular.module('starter.controllers', [])
   var categoryId = $stateParams.categoryId;
   $scope.categoryId = categoryId;
   $scope.listings = Listings.getByCategoryId(categoryId);
+  $scope.showAlert = function(event){
+    alert(event)
+    imageUrl = Listings.get(event).imagePath;
+
+  }
 })
 
 .controller('QuantityCtrl', function($scope) {})
@@ -16,6 +21,7 @@ angular.module('starter.controllers', [])
 .controller('HelpCtrl', function($scope) {})
 
 .controller('DetailsCtrl', function($scope, Products, $cordovaGeolocation, $ionicPopup, $ionicLoading, $ionicPlatform, $compile) {
+  $scope.path = imageUrl
   $scope.products = Products.all();
 
   // It is important to wrap geolocation code into Ionic deviceready event, 

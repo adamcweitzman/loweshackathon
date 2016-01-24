@@ -40,6 +40,10 @@
 	height: 300px;
   width: 100%;
 }
+#detailsIMG {
+	height: 200px;
+	width: 100%;
+}
 /* might be needed if map has issues
 .scroll {
     height: 100%;

@@ -1,7 +1,6 @@
 <ion-content class="padding">
-<div class="text-center">
-  <img class="listing category" src="img/max.png">
-</div>
+  <div class="overlay"></div>
+  <img id="detailsIMG" src="{{path}}">
   <div class="ion-list itemList" ng-repeat="product in products">
   <li>Kitchen Item {{product.position}}</li>
   <li class="item">Description: {{product.description | limitTo: 75}}...</li>
