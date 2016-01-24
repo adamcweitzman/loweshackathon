@@ -239,6 +239,7 @@ angular.module('starter.services', [])
       // @todo Set this in global config
       $http.defaults.headers.common.Authorization = 'Basic QWRvYmU6ZW9pdWV3ZjA5ZmV3bw==';
 
+      // @todo API key should not be hardcoded and base api url
       $http({
         method: 'GET',
         url: 'http://api.lowes.com/store/location?query=' + lat + '%2C' + long + '&maxResults=' + maxResults + '&api_key=xkqmdm8afd2cuwy88nzzvucq'
