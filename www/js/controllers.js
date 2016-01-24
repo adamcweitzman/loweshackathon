@@ -1,7 +1,7 @@
 angular.module('starter.controllers', [])
 
 .config(function($ionicConfigProvider) {
-  $ionicConfigProvider.navBar.transition('none')
+  //$ionicConfigProvider.navBar.transition('none');
 })
 
 .controller('HomeCtrl', function($scope, Categories) {
@@ -13,20 +13,20 @@ angular.module('starter.controllers', [])
   var categoryId = $stateParams.categoryId;
   $scope.categoryId = categoryId;
   $scope.listings = Listings.getByCategoryId(categoryId);
-  $scope.showAlert = function (id) {
-    globalImgPath = Listings.get(id).imagePath
-  }
+  // $scope.showAlert = function (id) {
+  //   globalImgPath = Listings.get(id).imagePath;
+  // };
 })
 
 .controller('QuantityCtrl', function($scope) {})
 
 .controller('HelpCtrl', function($scope) {})
 
-.controller('DetailsCtrl', function($scope, Products, Stores, Categories, $stateParams, $ngCordova, $cordovaCamera, $cordovaGeolocation, $ionicPopup, $ionicLoading, $ionicPlatform, $compile) {
+.controller('DetailsCtrl', function($scope, Products, Stores, Categories, $stateParams, $cordovaCamera, $cordovaGeolocation, $ionicPopup, $ionicLoading, $ionicPlatform, $compile) {
   $scope.products = Products.all();
-  $scope.path = globalImgPath
+  // $scope.path = '';
 
-  var categoryId = Products.get($stateParams.listingId);
+  // var categoryId = Products.get($stateParams.listingId);
 
   // It is important to wrap geolocation code into Ionic deviceready event, 
   //  execution will timeout without it
@@ -35,26 +35,26 @@ angular.module('starter.controllers', [])
           template: '<ion-spinner icon="bubbles"></ion-spinner><br/>Locating nearby stores..'
       });
 
-    $scope.takePicture = function() {
-      var options = {
-          quality : 75,
-          destinationType : Camera.DestinationType.DATA_URL,
-          sourceType : Camera.PictureSourceType.CAMERA,
-          allowEdit : true,
-          encodingType: Camera.EncodingType.JPEG,
-          targetWidth: 300,
-          targetHeight: 300,
-          popoverOptions: CameraPopoverOptions,
-          saveToPhotoAlbum: false
-      };
+    // $scope.takePicture = function() {
+    //   var options = {
+    //       quality : 75,
+    //       destinationType : Camera.DestinationType.DATA_URL,
+    //       sourceType : Camera.PictureSourceType.CAMERA,
+    //       allowEdit : true,
+    //       encodingType: Camera.EncodingType.JPEG,
+    //       targetWidth: 300,
+    //       targetHeight: 300,
+    //       popoverOptions: CameraPopoverOptions,
+    //       saveToPhotoAlbum: false
+    //   };
 
-      $cordovaCamera.getPicture(options).then(function(imageData) {
-        $scope.imgURI = "data:image/jpeg;base64," + imageData;
-      }, function(err) {
-        // An error occured. Show a message to the user
-        console.log(err);
-      });
-    };
+    //   $cordovaCamera.getPicture(options).then(function(imageData) {
+    //     $scope.imgURI = "data:image/jpeg;base64," + imageData;
+    //   }, function(err) {
+    //     // An error occured. Show a message to the user
+    //     console.log(err);
+    //   });
+    // };
 
     var posOptions = {
         enableHighAccuracy: false,

@@ -10,15 +10,15 @@
     <img class="listing category" src="{{path}}" style="width:100%">
   </div>
   <div class="ion-list itemList2" ng-repeat="product in products">
-  <!--<h5 id="itemname">Item {{product.position}}</h5>-->
-	<!--<li class="item">{{product.description | limitTo: 75}}...</li>-->
-	<h5 class="itemname">{{product.description}}</h5>
-	<p class="itembrand">{{product.brand}}</p>
-  
-  <li class="item"><strong>Price:</strong> {{product.networkPrice | currency}}</li>
-  <!--<li class="item">Brand: {{product.brand}}</li>-->
+    <!--<h5 id="itemname">Item {{product.position}}</h5>-->
+  	<!--<li class="item">{{product.description | limitTo: 75}}...</li>-->
+  	<h5 class="itemname">{{product.description}}</h5>
+  	<p class="itembrand">{{product.brand}}</p>
+    
+    <li class="item"><strong>Price:</strong> {{product.networkPrice | currency}}</li>
+    <!--<li class="item">Brand: {{product.brand}}</li>-->
 
-  <li class="item"><strong>Rating:</strong> {{product.rating | number: 1}}</li>
+    <li class="item"><strong>Rating:</strong> {{product.rating | number: 1}}</li>
   </div>
 
   <div id="map" data-tap-disabled="true"></div>
