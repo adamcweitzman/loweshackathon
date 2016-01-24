@@ -22,12 +22,13 @@ angular.module('starter.controllers', [])
 
 .controller('HelpCtrl', function($scope) {})
 
-.controller('DetailsCtrl', function($scope, Products, Stores, Categories, $stateParams, $cordovaCamera, $cordovaGeolocation, $ionicPopup, $ionicLoading, $ionicPlatform, $compile) {
+.controller('DetailsCtrl', function($scope, Products, Categories, $stateParams, $ionicPopup, $ionicLoading, $ionicPlatform) {
   $scope.products = Products.all();
   // $scope.path = '';
-
   // var categoryId = Products.get($stateParams.listingId);
+})
 
+.controller('LocationsCtrl', function($scope, Stores, $stateParams, $cordovaGeolocation, $ionicPopup, $ionicLoading, $ionicPlatform, $compile) {
   // It is important to wrap geolocation code into Ionic deviceready event, 
   //  execution will timeout without it
   ionic.Platform.ready(function(){

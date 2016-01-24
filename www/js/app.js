@@ -49,6 +49,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     controller: 'DetailsCtrl'
   })
 
+  .state('locations', {
+    url: '/locations',
+    templateUrl: 'templates/locations.html',
+    controller: 'LocationsCtrl'
+  })
+
   .state('quantity', {
     url: '/quantity',
     templateUrl: 'templates/quantity.html',
