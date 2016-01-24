@@ -1,5 +1,9 @@
 angular.module('starter.controllers', [])
 
+.config(function($ionicConfigProvider ) {
+  $ionicConfigProvider.navBar.transition('none')
+})
+
 .controller('HomeCtrl', function($scope, Categories) {
   $scope.categories = Categories.all();
   $scope.page = 1;
