@@ -39,6 +39,7 @@
 #map {
 	height: 300px;
   width: 100%;
+  margin-top: 3%;
 }
 
 .details-btn {
@@ -51,12 +52,32 @@
   z-index: 100;
 }
 
+.button.button-full {
+  margin-bottom: 0px;
+}
+
 .details-pg {
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 
 .title {
   background-color: white;
+}
+
+h2 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
+}
+
+#itemname {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
+  color: #023F9A;
+}
+
+.item {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
 }
 /* might be needed if map has issues
 .scroll {
