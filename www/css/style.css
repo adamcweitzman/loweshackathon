@@ -105,6 +105,10 @@ div .title .title-right .header-item {
 	padding: 0 0 50px;
 }
 
+.title {
+  color: #023F9A;
+}
+
 .button.button-full {
   font-family: 'Noto Sans', sans-serif;
   font-size: 14px;
