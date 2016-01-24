@@ -60,13 +60,6 @@
   z-index: 100;
 }
 
-.button.button-full {
-  margin-bottom: 0px;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-}
-
 .details-pg {
   margin-bottom: 45px;
 }
@@ -112,9 +105,21 @@ div .title .title-right .header-item {
 	padding: 0 0 50px;
 }
 
+.button.button-full {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
 
+.location-title {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
+  color: #023F9A;
+}
 
-
+.location-cont {
+  font-family: 'Noto Sans', sans-serif;
+}
 
 /* might be needed if map has issues
 .scroll {
