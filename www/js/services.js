@@ -4,73 +4,73 @@ angular.module('starter.services', [])
   var listings = [{
     id: 1,
     categoryId: 1,
-    name: 'Bathroom 1',
+    name: 'The Mike',
     imagePath: 'img/bathroom_one.jpg',
     description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 2,
     categoryId: 1,
-    name: 'Bathroom 2',
+    name: 'The Ryan',
     imagePath: 'img/bathroom_two.jpg',
     description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 3,
     categoryId: 1,
-    name: 'Bathroom 3',
+    name: 'The Ale',
     imagePath: 'img/bathroom_three.jpg',
     description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 4,
     categoryId: 1,
-    name: 'Bathroom 4',
+    name: 'The Adam',
     imagePath: 'img/bathroom_four.jpeg',
     description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 5,
     categoryId: 2,
-    name: 'Kitchen 1',
+    name: 'Chef\'s Kitchen',
     imagePath: 'img/kitchen_one.jpg',
     description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 6,
     categoryId: 2,
-    name: 'Kitchen 2',
+    name: 'Charlie\'s Kitchen',
     imagePath: 'img/kitchen_two.jpg',
     description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 7,
     categoryId: 2,
-    name: 'Kitchen 3',
+    name: 'Kitchen\'s Deli',
     imagePath: 'img/kitchen_three.jpg',
     description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 8,
     categoryId: 2,
-    name: 'Kitchen 4',
+    name: 'Highland Kitchen',
     imagePath: 'img/kitchen_four.jpg',
     description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 9,
     categoryId: 2,
-    name: 'Kitchen 5',
+    name: 'Corner Kitchen,
     imagePath: 'img/kitchen_five.jpg',
     description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 10,
     categoryId: 3,
-    name: 'Living Room 1',
+    name: 'Den,
     imagePath: 'img/lroom_one.jpg',
     description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 11,
     categoryId: 3,
-    name: 'Living Room 2',
+    name: 'Cellar',
     imagePath: 'img/lroom_two.jpg',
     description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 12,
     categoryId: 3,
-    name: 'Living Room 3',
+    name: 'Foyer',
     imagePath: 'img/lroom_three.jpg',
     description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }];
