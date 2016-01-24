@@ -105,15 +105,15 @@ angular.module('starter.services', [])
   var categories = [{
     id: 1,
     name: 'Bathroom',
-    imagePath: 'img/bathroom_one.jpg'
+    imagePath: 'img/bathroom_home.jpeg'
   }, {
     id: 2,
     name: 'Kitchen',
-    imagePath: 'img/kitchen_one.jpg'
+    imagePath: 'img/kitchen_home.jpg'
   }, {
     id: 3,
     name: 'Living Room',
-    imagePath: 'img/lroom_one.jpg'
+    imagePath: 'img/lroom_home.jpg'
   }];
 
   return {
