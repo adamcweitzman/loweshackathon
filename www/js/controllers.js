@@ -4,9 +4,19 @@ angular.module('starter.controllers', [])
   //$ionicConfigProvider.navBar.transition('none');
 })
 
-.controller('HomeCtrl', function($scope, Categories) {
+.controller('HomeCtrl', function($scope, Categories, $location, $ionicNavBarDelegate) {
   $scope.categories = Categories.all();
   $scope.page = 1;
+
+  // Hide the back button on the home screen
+  var path = $location.path();
+
+  if (path.indexOf('submit') != -1) {
+    $ionicNavBarDelegate.showBackButton(false);
+  } else {
+    $ionicNavBarDelegate.showBackButton(true);
+  }
+  
 })
 
 .controller('ListingsCtrl', function($scope, $stateParams, Listings) {
