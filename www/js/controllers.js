@@ -15,7 +15,7 @@ angular.module('starter.controllers', [])
 
 .controller('HelpCtrl', function($scope) {})
 
-.controller('DetailsCtrl', function($scope, Products, $cordovaGeolocation, $ionicPopup, $ionicLoading, $ionicPlatform, $compile) {
+.controller('DetailsCtrl', function($scope, Products, Stores, $cordovaGeolocation, $ionicPopup, $ionicLoading, $ionicPlatform, $compile) {
   $scope.products = Products.all();
 
   // It is important to wrap geolocation code into Ionic deviceready event, 
@@ -35,41 +35,51 @@ angular.module('starter.controllers', [])
         var lat  = position.coords.latitude;
         var long = position.coords.longitude;
 
-        $ionicPopup.alert({
-          title: 'Position found: ',
-          content: 'lat: ' + lat + ' long: ' + long
-        }).then(function(res) {
-          console.log('Test Alert Box');
-        });
-         
-        var myLatlng = new google.maps.LatLng(lat, long);
-         
-        var mapOptions = {
-            center: myLatlng,
-            zoom: 16,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        console.log('lat: ' + lat + ' long: ' + long);
+
+        // $ionicPopup.alert({
+        //   title: 'Position found: ',
+        //   content: 'lat: ' + lat + ' long: ' + long
+        // }).then(function(res) {
+        //   console.log('Test Alert Box');
+        // });
         
-        var contentString = "<div>Current Location</div>";
-        var compiled = $compile(contentString)($scope);
+        Stores.findByPosition(lat, long, 5, function(results) {
+          console.log('Results: ', results);
 
-        var infoWindow = new google.maps.InfoWindow({
-          content: compiled[0]
+          var myLatlng = new google.maps.LatLng(lat, long);
+         
+          var mapOptions = {
+              center: myLatlng,
+              zoom: 10,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+          var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+          for (var i=0; i<results.length; i++) {
+            console.log('testing: ', results[i]['latitude']);
+            var newLatlng = new google.maps.LatLng(results[i]['latitude'], results[i]['longitude']);
+            
+            var contentString = "<h4>Lowe's Store #" + results[i]['storeNumber'] + "</h4><p>" + results[i]['address1'] + ", " + results[i]['city'] + " " + results[i]['state'] + " " + results[i]['zip'] + "</p><p>" + results[i]['milesToStore'] + " miles away</p>";
+            var compiled = $compile(contentString)($scope);
+
+            var infoWindow = new google.maps.InfoWindow({
+              content: compiled[0]
+            });
+
+            var marker = new google.maps.Marker({
+              position: newLatlng,
+              map: map,
+              title: 'Current Location'
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+              infoWindow.open(map,marker);
+            });
+          }
+
+          $scope.map = map;
+          $ionicLoading.hide();
         });
-
-        var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: 'Current Location'
-        });
-        google.maps.event.addListener(marker, 'click', function() {
-          infoWindow.open(map,marker);
-        });
-
-        $scope.map = map;
-
-        $ionicLoading.hide();
          
     }, function(err) {
         $ionicLoading.hide();

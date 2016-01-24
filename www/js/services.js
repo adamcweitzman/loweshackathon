@@ -228,4 +228,26 @@ angular.module('starter.services', [])
     }
   };
 
+})
+
+.factory('Stores', function($http) {
+
+  return {
+    findByPosition: function(lat, long, maxResults, callback) {
+      // @todo Set this in global config
+      $http.defaults.headers.common.Authorization = 'Basic QWRvYmU6ZW9pdWV3ZjA5ZmV3bw==';
+
+      $http({
+        method: 'GET',
+        url: 'http://api.lowes.com/store/location?query=' + lat + '%2C' + long + '&maxResults=' + maxResults + '&api_key=xkqmdm8afd2cuwy88nzzvucq'
+      }).then(function successCallback(response) {
+        console.log('success!');
+
+        callback(response.data.storeLocation);
+      }, function errorCallback(response) {
+        console.log(response);
+        callback(response);
+      });
+    }
+  };
 });
