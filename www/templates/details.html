@@ -10,7 +10,7 @@
   <img class="listing category" src="img/bathroom_one.jpg" style="width:100%">
 </div>
   <div class="ion-list itemList" ng-repeat="product in products">
-  <h5 id="itemname">Kitchen Item {{product.position}}</h5>
+  <h5 id="itemname">Item {{product.position}}</h5>
   <li class="item">Description: {{product.description | limitTo: 75}}...</li>
   <li class="item">Price: {{product.networkPrice | currency}}</li>
   <li class="item">Brand: {{product.brand}}</li>

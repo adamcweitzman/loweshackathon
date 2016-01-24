@@ -54,6 +54,9 @@
 
 .button.button-full {
   margin-bottom: 0px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .details-pg {
@@ -64,21 +67,31 @@
   background-color: white;
 }
 
-h2 {
+h2, #itemname {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 600;
 }
 
 #itemname {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 600;
   color: #023F9A;
 }
 
-.item {
+.back, .item {
   font-family: 'Noto Sans', sans-serif;
+  background: transparent;
   font-size: 12px;
 }
+
+.button-positive {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.thanks {
+  font-size: 14px;
+}
+
 /* might be needed if map has issues
 .scroll {
     height: 100%;
