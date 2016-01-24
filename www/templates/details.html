@@ -1,6 +1,13 @@
-<ion-content class="padding">
+<div class="details-btn">
+    <a href="#/confirmation"><button class="button button-full button-positive">
+      Get Started
+    </button>
+  </a>
+</div>
+
+<ion-content class="padding details-pg">
 <div class="text-center">
-  <img class="listing category" src="img/max.png">
+  <img class="listing category" src="img/bathroom_one.jpg" style="width:100%">
 </div>
   <div class="ion-list itemList" ng-repeat="product in products">
   <li>Kitchen Item {{product.position}}</li>
@@ -11,8 +18,8 @@
   <li class="item">Rating: {{product.rating | number: 1}}</li>
   </div>
 
-  <div id="map" data-tap-disabled="true"></div>
-  <a href="#/confirmation"><button class="button button-block button-positive">
-  	Get Started
-  </button></a>
+  <div id="map"></div>
+
+
 </ion-content>
+

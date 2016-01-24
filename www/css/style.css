@@ -40,6 +40,24 @@
 	height: 300px;
   width: 100%;
 }
+
+.details-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+/*  background: pink;
+  margin-top: 100px;*/
+  width: 100%;
+  z-index: 100;
+}
+
+.details-pg {
+  margin-bottom: 60px;
+}
+
+.title {
+  background-color: white;
+}
 /* might be needed if map has issues
 .scroll {
     height: 100%;
