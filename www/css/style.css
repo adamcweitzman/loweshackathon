@@ -54,6 +54,10 @@
 .details-pg {
   margin-bottom: 60px;
 }
+
+.title {
+  background-color: white;
+}
 /* might be needed if map has issues
 .scroll {
     height: 100%;
