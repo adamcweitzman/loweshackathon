@@ -32,6 +32,8 @@ angular.module('starter.controllers', [])
 
 .controller('HelpCtrl', function($scope) {})
 
+.controller('ConfirmationCtrl', function($scope) {})
+
 .controller('PhotoCtrl', function($scope, $cordovaCamera) {
   ionic.Platform.ready(function(){
 
