@@ -55,6 +55,11 @@ angular.module('starter.controllers', [])
               mapTypeId: google.maps.MapTypeId.ROADMAP
           };
           var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+          var infoWindows = [];
+
+          function openInfoPanel(num, map, marker) {
+            infoWindows[i].open(map,marker);
+          }
 
           for (var i=0; i<results.length; i++) {
             console.log('testing: ', results[i]['latitude']);
@@ -66,15 +71,17 @@ angular.module('starter.controllers', [])
             var infoWindow = new google.maps.InfoWindow({
               content: compiled[0]
             });
+            infoWindows.push(infoWindow);
 
             var marker = new google.maps.Marker({
               position: newLatlng,
               map: map,
-              title: 'Current Location'
+              title: 'Store Location'
             });
-            google.maps.event.addListener(marker, 'click', function() {
-              infoWindow.open(map,marker);
-            });
+            // @todo This doesn't work
+            // google.maps.event.addListener(marker, 'click', function(event) {
+            //   openInfoPanel(i, map, marker);
+            // });
           }
 
           $scope.map = map;
