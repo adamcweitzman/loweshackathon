@@ -55,7 +55,6 @@ angular.module('starter.controllers', [])
               mapTypeId: google.maps.MapTypeId.ROADMAP
           };
           var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-          
           var infoWindow = new google.maps.InfoWindow({});
           
           for (var i=0; i<results.length; i++) {
@@ -63,14 +62,14 @@ angular.module('starter.controllers', [])
             var newLatlng = new google.maps.LatLng(results[i]['latitude'], results[i]['longitude']);
             
             var contentString = "<h4>Lowe's Store #" + results[i]['storeNumber'] + "</h4><p>" + results[i]['address1'] + ", " + results[i]['city'] + " " + results[i]['state'] + " " + results[i]['zip'] + "</p><p><em>" + results[i]['milesToStore'] + " miles away</em></p>";
-            var compiled = $compile(contentString)($scope);
+            //var compiled = $compile(contentString)($scope);
 
             var marker = new google.maps.Marker({
               position: newLatlng,
               map: map,
               title: 'Store Location'
             });
-            // @todo This doesn't work
+
             google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){
                 return function() {
                     infowindow.setContent(content);
