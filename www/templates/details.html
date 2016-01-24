@@ -1,14 +1,13 @@
 <div class="details-btn">
-    <a href="#/confirmation"><button class="fixed-bt button button-full button-positive">
-      Get Started
-    </button>
-  </a>
+  <button class="fixed-bt button button-full button-positive" ng-click="takePicture()">
+    Get Started
+  </button>
 </div>
 
 <ion-content class="padding details-pg">
-<div class="text-center">
-  <img class="listing category" src="img/bathroom_one.jpg" style="width:100%">
-</div>
+	<div class="text-center">
+	  <img class="listing category" src="img/bathroom_one.jpg" style="width:100%">
+	</div>
   <div class="ion-list itemList2" ng-repeat="product in products">
   <!--<h5 id="itemname">Item {{product.position}}</h5>-->
 	<!--<li class="item">{{product.description | limitTo: 75}}...</li>-->
@@ -23,6 +22,4 @@
 
   <div id="map" data-tap-disabled="true"></div>
 
-
 </ion-content>
-
