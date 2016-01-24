@@ -22,7 +22,7 @@ angular.module('starter.controllers', [])
   //  execution will timeout without it
   ionic.Platform.ready(function(){
     $ionicLoading.show({
-          template: '<ion-spinner icon="bubbles"></ion-spinner><br/>Acquiring location..'
+          template: '<ion-spinner icon="bubbles"></ion-spinner><br/>Locating nearby stores..'
       });
 
     var posOptions = {
@@ -55,23 +55,15 @@ angular.module('starter.controllers', [])
               mapTypeId: google.maps.MapTypeId.ROADMAP
           };
           var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-          var infoWindows = [];
-
-          function openInfoPanel(num, map, marker) {
-            infoWindows[i].open(map,marker);
-          }
-
+          
+          var infoWindow = new google.maps.InfoWindow({});
+          
           for (var i=0; i<results.length; i++) {
             console.log('testing: ', results[i]['latitude']);
             var newLatlng = new google.maps.LatLng(results[i]['latitude'], results[i]['longitude']);
             
-            var contentString = "<h4>Lowe's Store #" + results[i]['storeNumber'] + "</h4><p>" + results[i]['address1'] + ", " + results[i]['city'] + " " + results[i]['state'] + " " + results[i]['zip'] + "</p><p>" + results[i]['milesToStore'] + " miles away</p>";
+            var contentString = "<h4>Lowe's Store #" + results[i]['storeNumber'] + "</h4><p>" + results[i]['address1'] + ", " + results[i]['city'] + " " + results[i]['state'] + " " + results[i]['zip'] + "</p><p><em>" + results[i]['milesToStore'] + " miles away</em></p>";
             var compiled = $compile(contentString)($scope);
-
-            var infoWindow = new google.maps.InfoWindow({
-              content: compiled[0]
-            });
-            infoWindows.push(infoWindow);
 
             var marker = new google.maps.Marker({
               position: newLatlng,
@@ -79,9 +71,12 @@ angular.module('starter.controllers', [])
               title: 'Store Location'
             });
             // @todo This doesn't work
-            // google.maps.event.addListener(marker, 'click', function(event) {
-            //   openInfoPanel(i, map, marker);
-            // });
+            google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){
+                return function() {
+                    infowindow.setContent(content);
+                    infowindow.open(map,marker);
+                };
+            })(marker, contentString, infoWindow));
           }
 
           $scope.map = map;
