@@ -34,31 +34,31 @@ angular.module('starter.controllers', [])
 
 .controller('ConfirmationCtrl', function($scope) {})
 
-.controller('PhotoCtrl', function($scope, $cordovaCamera) {
-  ionic.Platform.ready(function(){
-
+.controller('PhotoCtrl', function($scope, Camera, $cordovaCamera) {
+  
     $scope.takePicture = function() {
-      var options = {
-          quality : 75,
-          destinationType : Camera.DestinationType.DATA_URL,
-          sourceType : Camera.PictureSourceType.CAMERA,
-          allowEdit : true,
-          encodingType: Camera.EncodingType.JPEG,
-          targetWidth: 300,
-          targetHeight: 300,
-          popoverOptions: CameraPopoverOptions,
-          saveToPhotoAlbum: false
-      };
+      ionic.Platform.ready(function(){
+        var options = {
+            quality : 75,
+            destinationType : Camera.DestinationType.DATA_URL,
+            sourceType : Camera.PictureSourceType.CAMERA,
+            allowEdit : true,
+            encodingType: Camera.EncodingType.JPEG,
+            targetWidth: 300,
+            targetHeight: 300,
+            popoverOptions: CameraPopoverOptions,
+            saveToPhotoAlbum: false
+        };
 
-      $cordovaCamera.getPicture(options).then(function(imageData) {
-        $scope.imgURI = "data:image/jpeg;base64," + imageData;
-      }, function(err) {
-        // An error occured. Show a message to the user
-        console.log(err);
+        $cordovaCamera.getPicture(options).then(function(imageData) {
+          $scope.imgURI = "data:image/jpeg;base64," + imageData;
+        }, function(err) {
+          // An error occured. Show a message to the user
+          console.log(err);
+        });
       });
     };
 
-  });
 })
 
 .controller('FormCtrl', function($scope) {})
@@ -149,33 +149,3 @@ angular.module('starter.controllers', [])
   });
 });
 
-
-// The following is from the generated project and only use for an example
-/*
-.controller('DashCtrl', function($scope) {})
-
-.controller('ChatsCtrl', function($scope, Chats) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
-
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
-})
-
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
-
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
-});
-*/
