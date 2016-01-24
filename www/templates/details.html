@@ -9,7 +9,7 @@
 <ion-content class="padding details-pg">
 
   <div class="text-center">
-    <img class="listing category" src="{{path}}" style="width:100%">
+    <img class="listing category" src="{{imgPath}}" style="width:100%">
   </div>
   <div class="ion-list itemList2" ng-repeat="product in products">
     <!--<h5 id="itemname">Item {{product.position}}</h5>-->
@@ -22,7 +22,5 @@
 
     <li class="item"><strong>Rating:</strong> {{product.rating | number: 1}}</li>
   </div>
-
-  <!-- <div id="map" data-tap-disabled="true"></div> -->
 
 </ion-content>

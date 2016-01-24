@@ -26,10 +26,12 @@ angular.module('starter.controllers', [])
 
 .controller('FormCtrl', function($scope) {})
 
-.controller('DetailsCtrl', function($scope, Products, Categories, $stateParams, $ionicPopup, $ionicLoading, $ionicPlatform) {
+.controller('DetailsCtrl', function($scope, Products, Listings, $stateParams, $ionicPopup, $ionicLoading, $ionicPlatform) {
   $scope.products = Products.all();
-  // $scope.path = '';
-  // var categoryId = Products.get($stateParams.listingId);
+  var listingId = $stateParams.listingId;
+  var listing = Listings.get(listingId);
+
+  $scope.imgPath = listing.imagePath;
 })
 
 .controller('LocationsCtrl', function($scope, Stores, $stateParams, $cordovaGeolocation, $ionicPopup, $ionicLoading, $ionicPlatform, $compile) {
