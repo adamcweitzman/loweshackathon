@@ -55,6 +55,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     controller: 'LocationsCtrl'
   })
 
+  .state('photo', {
+    url: '/photo',
+    templateUrl: 'templates/photo.html',
+    controller: 'PhotoCtrl'
+  })
+
+  .state('form', {
+    url: '/form',
+    templateUrl: 'templates/form.html',
+    controller: 'FormCtrl'
+  })
+
   .state('quantity', {
     url: '/quantity',
     templateUrl: 'templates/quantity.html',

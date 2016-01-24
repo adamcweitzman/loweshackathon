@@ -22,6 +22,10 @@ angular.module('starter.controllers', [])
 
 .controller('HelpCtrl', function($scope) {})
 
+.controller('PhotoCtrl', function($scope) {})
+
+.controller('FormCtrl', function($scope) {})
+
 .controller('DetailsCtrl', function($scope, Products, Categories, $stateParams, $ionicPopup, $ionicLoading, $ionicPlatform) {
   $scope.products = Products.all();
   // $scope.path = '';
