@@ -3,7 +3,7 @@
 	<ion-content class="padding">
 	  <ion-list ng-controller="ListingsCtrl" ng-repeat="listing in listings">
 	  	<a href="#/listings/{{listing.id}}">
-		    <section class="listing" type="item-text-wrap">
+		    <section class="listing" type="item-text-wrap" ng-click="showAlert({{listing.id}})">
 		  		<div class="overlay"></div>
 		  		<img ng-src="{{listing.imagePath}}">
 		  		<h2 class="listing-heading">{{listing.name}}</h2>

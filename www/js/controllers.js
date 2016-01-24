@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.config(function($ionicConfigProvider ) {
+.config(function($ionicConfigProvider) {
   $ionicConfigProvider.navBar.transition('none')
 })
 
@@ -13,6 +13,9 @@ angular.module('starter.controllers', [])
   var categoryId = $stateParams.categoryId;
   $scope.categoryId = categoryId;
   $scope.listings = Listings.getByCategoryId(categoryId);
+  $scope.showAlert = function (id) {
+    globalImgPath = Listings.get(id).imagePath
+  }
 })
 
 .controller('QuantityCtrl', function($scope) {})
@@ -21,6 +24,7 @@ angular.module('starter.controllers', [])
 
 .controller('DetailsCtrl', function($scope, Products, Stores, $cordovaGeolocation, $ionicPopup, $ionicLoading, $ionicPlatform, $compile) {
   $scope.products = Products.all();
+  $scope.path = globalImgPath
 
   // It is important to wrap geolocation code into Ionic deviceready event, 
   //  execution will timeout without it
