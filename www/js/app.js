@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngCordova'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -59,10 +59,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/help',
     templateUrl: 'templates/help.html',
     controller: 'HelpCtrl'
+  })
+
+  .state('confirmation', {
+    url: '/confirmation',
+    templateUrl: 'templates/confirmation.html',
+    controller: 'HelpCtrl'
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/home');
+  // $urlRouterProvider.otherwise('/home');
 
   /*
   // setup an abstract state for the tabs directive

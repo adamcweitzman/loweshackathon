@@ -5,62 +5,74 @@ angular.module('starter.services', [])
     id: 1,
     categoryId: 1,
     name: 'Bathroom 1',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/bathroom_one.jpg',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 2,
     categoryId: 1,
     name: 'Bathroom 2',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/bathroom_two.jpg',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 3,
     categoryId: 1,
     name: 'Bathroom 3',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/bathroom_three.jpg',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 4,
     categoryId: 1,
     name: 'Bathroom 4',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/bathroom_four.jpeg',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 5,
     categoryId: 2,
     name: 'Kitchen 1',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/kitchen_one.jpg',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 6,
     categoryId: 2,
     name: 'Kitchen 2',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/kitchen_two.jpg',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 7,
     categoryId: 2,
     name: 'Kitchen 3',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/kitchen_three.jpg',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 8,
     categoryId: 2,
     name: 'Kitchen 4',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/kitchen_four.jpg',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 9,
     categoryId: 2,
     name: 'Kitchen 5',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/kitchen_five.jpg',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 10,
     categoryId: 3,
     name: 'Living Room 1',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/lroom_one.jpg',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 11,
     categoryId: 3,
     name: 'Living Room 2',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/lroom_two.jpg',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 12,
     categoryId: 3,
     name: 'Living Room 3',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/lroom_three.jpg',
+    description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }];
 
   return {
@@ -91,15 +103,15 @@ angular.module('starter.services', [])
   var categories = [{
     id: 1,
     name: 'Bathroom',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/bathroom_one.jpg'
   }, {
     id: 2,
     name: 'Kitchen',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/kitchen_one.jpg'
   }, {
     id: 3,
     name: 'Living Room',
-    imagePath: 'img/ben.png'
+    imagePath: 'img/lroom_one.jpg'
   }];
 
   return {
@@ -134,7 +146,8 @@ angular.module('starter.services', [])
          "mulQuantity":0,
          "minQuantity":0,
          "disclaimer":"Does not include faucet or drain",
-         "links":[  ]
+         "links":[  ],
+         "position":1
       },
       {
          "networkPrice":"199.0",
@@ -151,7 +164,8 @@ angular.module('starter.services', [])
          "mulQuantity":-1,
          "minQuantity":-1,
          "disclaimer":"In-use/lifestyle images - faucet only",
-         "links":[  ]
+         "links":[  ],
+         "position":2
       },
       {
          "networkPrice":"824.25",
@@ -168,7 +182,8 @@ angular.module('starter.services', [])
          "mulQuantity":-1,
          "minQuantity":-1,
          "disclaimer":"Does not include faucet or drain",
-         "links":[  ]
+         "links":[  ],
+         "position":3
       },
       {
          "networkPrice":"133.0",
@@ -184,7 +199,8 @@ angular.module('starter.services', [])
          "type":"LOCALONLY",
          "mulQuantity":0,
          "minQuantity":0,
-         "links":[  ]
+         "links":[  ],
+         "position":4
       },
       {
          "networkPrice":"199.0",
@@ -201,7 +217,8 @@ angular.module('starter.services', [])
          "mulQuantity":-1,
          "minQuantity":-1,
          "disclaimer":"In use/lifestyle image - accessories not included",
-         "links":[  ]
+         "links":[  ],
+         "position":5
       }
    ];
 
