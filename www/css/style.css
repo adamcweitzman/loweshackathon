@@ -115,13 +115,13 @@ div .title .title-right .header-item {
   font-weight: 500;
 }
 
-.location-title {
+.location-title, #ptitle {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 600;
   color: #023F9A;
 }
 
-.location-cont {
+.location-cont, #pcont {
   font-family: 'Noto Sans', sans-serif;
 }
 
