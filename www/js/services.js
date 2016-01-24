@@ -52,13 +52,13 @@ angular.module('starter.services', [])
   }, {
     id: 9,
     categoryId: 2,
-    name: 'Corner Kitchen,
+    name: 'Corner Kitchen',
     imagePath: 'img/kitchen_five.jpg',
     description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
     id: 10,
     categoryId: 3,
-    name: 'Den,
+    name: 'Den',
     imagePath: 'img/lroom_one.jpg',
     description: 'Duis consequat sem sed sapien semper, a convallis elit ornare. Nam rutrum lorem urna. Ut dignissim nec dui nec dignissim. Sed egestas congue sodales. Praesent vulputate, mauris nec tincidunt dignissim, felis est luctus libero, quis ullamcorper magna est sit amet dolor. Integer mollis feugiat ex, quis commodo ligula faucibus vitae. Nullam placerat luctus efficitur.'
   }, {
